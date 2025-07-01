@@ -1,6 +1,6 @@
-from scraper import fetch_jobs
-from db import init_db, save_jobs
-from emailer import send_email
+from scraper.scraper import fetch_jobs
+from storage.db import init_db, save_jobs
+from notifier.emailer import send_email
 
 def run():
     print("Starting job scraper...")
